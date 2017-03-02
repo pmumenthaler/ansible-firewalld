@@ -1,0 +1,11 @@
+---
+- name: open puppet port 8142
+  firewalld:
+      state: enabled
+      port: 8142/tcp
+      permanent: true
+- name: open puppet port 8140
+  firewalld:
+      state: enabled
+      port: 8140/tcp
+      permanent: true
